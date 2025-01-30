@@ -79,9 +79,9 @@ class Book
 
 class BorrowReciept
 {
-  public DateTime BorrowingDate;
-  public DateTime DueDate;
-  public String BookTitle;
+  public DateTime BorrowingDate { get; set; }
+  public DateTime DueDate { get; set; }
+  public String BookTitle { get; set; }
 
   public BorrowReciept(string bookTitle)
   {
