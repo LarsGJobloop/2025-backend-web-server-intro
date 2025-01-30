@@ -3,7 +3,7 @@ var app = builder.Build();
 
 RentingService rentingService = new RentingService();
 
-app.MapGet("/", () =>
+app.MapGet("/books", () =>
 {
   var bookInventory = rentingService.ListAllBooks();
   var booksList = bookInventory.Select(inventoryEntry => inventoryEntry.Key);
